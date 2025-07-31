@@ -7,6 +7,7 @@
     - more ...
   - Isn't officially supported on Windows Server, except Windows Server 2025 but ONLY with the Desktop Experience
   - Can't be run on Server 2019 "Core" at all (https://github.com/microsoft/winget-cli/discussions/2361#discussioncomment-8134429)
+  - [`--source` is an explicitly allowed and supported argument for `winget list` but doesn't actually have any effect](https://github.com/microsoft/winget-cli/issues/4236)
   - [Install-WingetPackage always force-reinstalls packages on every run](https://github.com/microsoft/winget-cli/issues/3455)
   - [Can't uninstall winget / DesktopAppInstaller once installed](https://github.com/microsoft/winget-cli/discussions/2361#discussioncomment-8062672)
   - [Parameters unexpectedly behave differently](https://github.com/microsoft/winget-cli/issues/4313)
@@ -21,8 +22,9 @@
   
 ### Automation-friendliness of the winget DOS CLI (as an alternative to the unusable PowerShell cmdlets)
 
+  - [Output is forecfully truncated, doesn't wrap, even when redirected](https://github.com/microsoft/winget-cli/issues/1653)
   - [winget CLI doesn't officially run in WinRM](https://github.com/microsoft/winget-cli/issues/256) (only with hacks)
-  - [winget CLI doesn't officially run in ssh](https://github.com/microsoft/winget-cli/issues/513) (only with hacks)
+  - [winget CLI doesn't officially run in SSH](https://github.com/microsoft/winget-cli/issues/513) (only with hacks)
   - [Telling winget to install a package that's currently installed is an error](https://github.com/microsoft/winget-cli/issues/4262)
   - [The output of `winget export` cannot be captured](https://github.com/microsoft/winget-cli/issues/4267)
   - [Animations and spinners cannot be turned off](https://github.com/microsoft/winget-cli/issues/3494)
